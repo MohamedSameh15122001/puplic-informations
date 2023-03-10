@@ -30,9 +30,9 @@ class MyApp extends StatelessWidget {
       create: (context) => MainCubit(),
       child: const MaterialApp(
         debugShowCheckedModeBanner: false,
-        title: 'Puplic Information',
+        title: 'Puplic Informations',
         // theme: ThemeData(
-        //   primarySwatch: Colors.blue,
+        //   primarySwatch: Colors.blueGrey,
         // ),
         home: SplashScreen(),
       ),

@@ -13,7 +13,7 @@ class SplashScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     SystemChrome.setSystemUIOverlayStyle(
       const SystemUiOverlayStyle(
-        statusBarColor: Color.fromARGB(255, 68, 70, 84),
+        statusBarColor: Colors.blueGrey,
         statusBarIconBrightness: Brightness.light,
       ),
     );
@@ -26,7 +26,7 @@ class SplashScreen extends StatelessWidget {
           size: 30,
         ),
       ),
-      backgroundColor: const Color.fromARGB(255, 68, 70, 84),
+      backgroundColor: Colors.blueGrey,
       bottomLoading: false,
       showStatusBar: true,
       title: Image.asset(
@@ -40,7 +40,7 @@ class SplashScreen extends StatelessWidget {
       //     end: Alignment.bottomCenter,
       //     colors: <Color>[Colors.green, Colors.blue]),
       done: Done(
-        Home(),
+        const Home(),
         animationDuration: const Duration(seconds: 2),
         // curve: Curves.easeInOut,
       ),
