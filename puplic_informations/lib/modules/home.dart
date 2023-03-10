@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
-import 'package:puplic_informations/modules/notification.dart';
 import 'package:puplic_informations/shared/components/constants.dart';
 import 'package:puplic_informations/shared/main_cubit/main_cubit.dart';
 import 'package:puplic_informations/shared/main_cubit/main_states.dart';
@@ -57,8 +56,8 @@ class Home extends StatelessWidget {
         builder: (context, state) {
           if (ref.randomYearFact['text'] != null &&
               ref.randomYearFact['number'] != null) {
-            NotificationService notificationService = NotificationService();
-            notificationService.initializeNotification();
+            // NotificationService notificationService = NotificationService();
+            // notificationService.initializeNotification();
             // notificationService.secheduleNotification(
             //   'Year Fact (${ref.randomYearFact['number'] ?? ''})',
             //   '${ref.randomYearFact['text']}.',
